@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+        crossorigin="anonymous"
+      />
+        
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <!-- <div class="banner"> </div> -->
+      
+         
+        <div class="logo-title"> 
+            <h1> Anime & Manga </h1>
+        </div>    
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="nav_link">Home</a>
+                        <a href="./top_anime.html" class="nav_link">Top Anime</a>
+                        <a href="./top_manga.html" class="nav_link">Top Manga</a>
+                        <!-- <a href="#" class="login">Login</a> -->
+                        
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>  
+      
+
+        <div class="search-box">
+            <select id="userSelection">
+                <option value="anime">Anime</option>
+                <option value="manga">Manga</option>
+                
+            </select>
+        
+                <input type="text" class="" id="anime_search" placeholder="search..."/>
+                <button   onclick="window.document.location='search_results.html#'+ document.getElementById('userSelection').value+ document.getElementById('anime_search').value"> Search</button>
+            
+
+        </div>
+        
+        <div class="index-title">Anime</div>
+        <div class="results" id="anime-results"></div>
+        <div class="index-title">Manga</div>
+        <div class="results" id="manga-results"></div>
+        
+
+        <footer>           
+                
+                Image source - <a href="https://jikan.docs.apiary.io/#" class="footer_text">Jikan API  </a>
+                <br></br>                
+                <i class="fa fa-copyright"> JonShawTech</i>
+            
+        </footer>
+ 
+
+        
+        <script src="./javascript/index.js" async defer></script>
+        <script src="./javascript/index.js" async defer></script>
+        <script>window.onload = function() {
+            loadDefault();
+          };</script>
+    </body>
+</html>

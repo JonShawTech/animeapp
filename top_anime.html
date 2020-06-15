@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+    crossorigin="anonymous"
+  />
+    <title>Top Anime</title>
+</head>
+
+
+<body>
+    <div class="logo-title"> 
+        <h1> Anime & Manga </h1>
+    </div>
+            <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="nav_link">Home</a>
+                        <!-- <a href="#" class="nav_link">Top Anime</a>
+                        <a href="#" class="nav_link">Top Manga</a> -->
+                       
+                        
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div> 
+
+        <div class="search-box">
+            <select id="userSelection">
+                <option value="anime">Anime</option>
+                <option value="manga">Manga</option>
+                
+            </select>
+        
+                <input type="text" class="" id="anime_search" placeholder="search..."/>
+                <button  onclick="handleSearch()"> Search</button>
+            
+
+        </div>
+
+    <div class="results" id="anime-results">
+            
+    </div>
+    <div class="results" id="manga-results"></div>
+    <footer>
+            
+                
+        Image source - <a href="https://jikan.docs.apiary.io/#" class="footer_text">Jikan API  </a>
+        <br></br>
+        
+        <i class="fa fa-copyright"> JonShawTech</i>
+    
+</footer>
+
+    
+    <script src="./javascript/index.js" async defer></script>
+
+    <script>window.onload = function() {
+        loadTopAnime();
+      };</script>
+    
+</body>
+</html>
